@@ -1,2 +1,4 @@
-Redis é um banco de dados open source NoSQL criado em linguagem C., em memória - por isso é rápido. é muito utilizado para fazer caching de aplicações, e assim contribuir para uma maior performance e tempo de resposta.
-O site oficial é https://redis.io/ , e podemos ver o código fonte do projeto no github, https://github.com/antirez/redis 
+O Redis é, de acordo com a documentação do site oficial (https://redis.io/), um armazenamento de estrutura de dados em memória. 
+E, justamente por ser em memória, é naturalmente mais rápido do que acessos em disco.
+
+Ele foi desenvolvido em C, e podemos ver o código fonte aqui:  https://github.com/antirez/redis.
