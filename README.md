@@ -38,9 +38,23 @@ Além disso, pode-se utilizar o tutorial online e interativo do Redis para test�
 -----------
 
 O site oficial traz uma lista de ***clients redis*** de diversas linguagens de programação, disponível aqui: https://redis.io/clients. 
+
 Usaremos o client [redis-rb](https://github.com/redis/redis-rb), recomendado para a linguagem ruby. E faremos a comunicação indireta por meio do pub/sub, conforme
 imagem:
 ![redis-pubsub](imgs/redis-pubsub.png "Pub-Sub")
+
+-----------
+
+#### Colocando em prática
+Após a contextualização teórica e instalação da ferramenta, vamos criar um exemplo de pub/sub simulando a inscrição de usuários de um site numa newsletter de seu interesse, por meio do redis.
+
+Instale as dependências do projeto ruby executando `bundle install`, que irá pegar essas dependências através do arquivo `Gemfile`.
+Em seguida, execute o arquivo **sub.rb**, e já será possível subscrever a mensagens: `ruby sub.rb`. Após receber a mensagem "Iniciando subscribe na lista newsletter#1", abra outra aba no terminal
+e faça um teste fazendo o publish diretamente do cli do redis: `redis-cli publish newsletter#1 "Colocar a mensagem que quiser"`. E a mensagem publicada pelo redis-cli irá aparecer no terminal do subscriber.
+
+De modo semelhante ao print abaixo:
+![redis-pubsub1](imgs/pub-sub1.png "Pub-Sub1")
+
 
 ##### Referências
 1.  https://redis.io/
