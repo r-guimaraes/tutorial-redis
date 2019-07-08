@@ -78,6 +78,14 @@ Por fim, opcionalmente publique uma outra mensagem no canal para ver que ningué
 ![redis-pubsub-eventos](imgs/pubsub-eventos.png "Ruby-PubSub Eventos")
 
 -----------
+#### Utilidades
+
+Além da implementação pub/sub em si, o Redis ainda fornece comandos úteis para obtermos mais informações acerca dos canais e mensagens atualmente no servidor. Vejamos algums exemplos:
+
+Quais canais estão ativos: `redis-cli pubsub channels`
+
+![redis-pubsub-channels](imgs/channels.png "Ruby-PubSub Channels")
+-----------
 
 #### Conclusão
 
