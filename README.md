@@ -85,7 +85,7 @@ Neste tutorial podemos ver as diversas formas flexíveis de instalação do Redi
 além de vermos apenas um dos clients que se integram muito bem com ele - em Ruby. Porém o redis possui vários outros tipos de aplicações úteis para facilitar
 a vida de desenvolvedores e usuários.
 
-Aproveite para navegar pela [documentação oficial](https://redis.io/):, e continue aprendendo sobre essa ferramenta rápida e flexível.
+Aproveite para navegar pela [documentação oficial](https://redis.io/), e continue aprendendo sobre essa ferramenta rápida e flexível.
 
 ##### Referências
 1.  https://redis.io/
