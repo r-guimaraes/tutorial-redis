@@ -1,5 +1,6 @@
 ### Projeto 3 - Comunicação Indireta - Aplicações Distribuídas UFG
-##### Redis
+#### Redis
+-----------
 
 O Redis é, de acordo com a documentação do site oficial (https://redis.io/), um armazenamento de estrutura de dados em memória. 
 E, justamente por ser em memória, é naturalmente mais rápido do que soluções que empregam acessos em disco.
@@ -10,6 +11,27 @@ para aplicações IoT (internet das coisas) e jogos.
 
 Redis é o acrônimo de Remote Dictionary Server (Servidor de Dicionário Remoto em tradução literal). É Open Source e desenvolvido em ANSI C. Podemos ver o código fonte aqui:  https://github.com/antirez/redis.
 
+#### Instalação
+-----------
+No MacOS, o **redis** pode ser instalado com o uso do [HomeBrew](https://brew.sh/index_pt-br):
+
+`brew install redis`
+
+No linux, é possível instalar através do apt:
+
+`apt install redis-server`
+
+Alternativamente, o site oficial também informa como baixar e instalar o executável:
+```
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+```
+Caso opte por este último método, veja mais detalhes na[ documentação oficial](https://redis.io/topics/quickstart).
+
+Após qualquer um dos métodos, confira se a instalação foi bem sucedida utilizando o comando de teste `redis-cli ping`. Deve retornar `PONG`, conforme imagem:
+
 O site oficial recomenda o uso do Redis em produção (deploy) em máquinas linux, 
 e traz uma lista de ***clients*** redis de diversas linguagens de programação, recomendando algumas, e disponível aqui: https://redis.io/clients.
 
@@ -18,3 +40,4 @@ E nosso tutorial será utilizado a linguagem ruby. Portanto, o client redis util
 ##### Referências
 1.  https://redis.io/
 2.  https://aws.amazon.com/pt/redis/
+3.  http://intro2libsys.com/
