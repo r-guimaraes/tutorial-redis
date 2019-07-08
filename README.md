@@ -67,6 +67,15 @@ De modo semelhante ao print abaixo:
 Agora, na mesma aba de onde executou o comando direto do `redis-cli`, certificando-se que está na raiz do projeto, envie uma mensagem (**pub**) para o subscriber (**sub**) ao executar o script correspondente: `ruby ./src/pub.rb`.
 ![redis-pubsub2](imgs/rb-pub.png "Ruby-Pub")
 
+-----------
+
+O Redis também oferece suporte à escuta de eventos relacionados ao pubsub, como `subscribe` (novo client sub), e `unsubscribe` (client sai da lista do canal). Abaixo um exemplo de funções ocorridas nesses eventos, por meio do código ruby. Para testar, execute `ruby ./src/sub-events.rb`. E, em nova aba `redis-cli publish newsletter#2 "Uma boa tarde a todos"`. Em seguida, `redis-cli publish newsletter#2 "Segunda-feira, julho de 2019"`. Ambas mensagens serão enviadas para todo cliente conectado no canal "newsletter#2". 
+
+Depois, faça-os sair do canal (unsubscribe) com o comando `redis-cli publish newsletter#2 SAIR` -> verá a mensagem correspondente a este evento.
+
+Por fim, redis-cli publish newsletter#2 "Não tem mais ninguém nessa lista"
+
+![redis-pubsub-eventos](imgs/pubsub-eventos.png "Ruby-PubSub Eventos")
 
 ##### Referências
 1.  https://redis.io/
