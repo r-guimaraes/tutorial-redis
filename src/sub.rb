@@ -1,6 +1,6 @@
 require "redis"
 
-## Assume que redis-server está rodando localhost, na porta padrão (6379)
+# Assume que redis-server está rodando localhost, na porta padrão (6379)
 redis = Redis.new
 
 lista1 = 'newsletter#1'
