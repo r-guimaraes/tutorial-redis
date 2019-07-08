@@ -82,9 +82,13 @@ Por fim, opcionalmente publique uma outra mensagem no canal para ver que ningué
 
 Além da implementação pub/sub em si, o Redis ainda fornece comandos úteis para obtermos mais informações acerca dos canais e mensagens atualmente no servidor. Vejamos algums exemplos:
 
-Quais canais estão ativos: `redis-cli pubsub channels`
+Quais canais estão ativos (no mínimo 1 subscriber): `redis-cli pubsub channels`
 
 ![redis-pubsub-channels](imgs/channels.png "Ruby-PubSub Channels")
+
+Quantos subscribers existem em cada canal: `redis-cli pubsub numsub newsletter#2`
+
+![redis-pubsub-subs](imgs/subs.png "Ruby-PubSub subs")
 -----------
 
 #### Conclusão
