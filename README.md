@@ -71,11 +71,15 @@ Agora, na mesma aba de onde executou o comando direto do `redis-cli`, certifican
 
 O Redis também oferece suporte à escuta de eventos relacionados ao pubsub, como `subscribe` (novo client sub), e `unsubscribe` (client sai da lista do canal). Abaixo um exemplo de funções ocorridas nesses eventos, por meio do código ruby. Para testar, execute `ruby ./src/sub-events.rb`. E, em nova aba `redis-cli publish newsletter#2 "Uma boa tarde a todos"`. Em seguida, `redis-cli publish newsletter#2 "Segunda-feira, julho de 2019"`. Ambas mensagens serão enviadas para todo cliente conectado no canal "newsletter#2". 
 
-Depois, faça-os sair do canal (unsubscribe) com o comando `redis-cli publish newsletter#2 SAIR` -> verá a mensagem correspondente a este evento.
+Depois, faça-os sair do canal (unsubscribe) com o comando `redis-cli publish newsletter#2 SAIR`, e veja as mensagens correspondentes a este evento nos terminais de cada **subscriber** (agora não mais subscriber) conectado.
 
-Por fim, redis-cli publish newsletter#2 "Não tem mais ninguém nessa lista"
+Por fim, opcionalmente publique uma outra mensagem no canal para ver que ninguém irá receber, ou seja, unsubscribe foi feito: `redis-cli publish newsletter#2 "Não tem mais ninguém nessa lista"`
 
 ![redis-pubsub-eventos](imgs/pubsub-eventos.png "Ruby-PubSub Eventos")
+
+-----------
+
+
 
 ##### Referências
 1.  https://redis.io/
