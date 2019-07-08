@@ -33,6 +33,8 @@ Caso opte por este último método, veja mais detalhes na[ documentação oficia
 Após qualquer um dos métodos, confira se a instalação foi bem sucedida utilizando o comando de teste `redis-cli ping`. Deve retornar `PONG`, conforme imagem:
 ![redis-cli](imgs/ping.png "Redis-CLI")
 
+Além disso, pode-se utilizar o tutorial online e interativo do Redis para testá-lo sem precisar instalar: http://try.redis.io/
+
 -----------
 
 O site oficial traz uma lista de ***clients redis*** de diversas linguagens de programação, disponível aqui: https://redis.io/clients. 
