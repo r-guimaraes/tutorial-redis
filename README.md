@@ -1,4 +1,4 @@
-### Projeto 3 - Comunicação Indireta - Aplicações Distribuídas UFG
+## Projeto 3 - Comunicação Indireta - Aplicações Distribuídas UFG
 #### Redis
 -----------
 
@@ -63,6 +63,9 @@ e faça um teste fazendo o `publish` diretamente do redis-cli: `redis-cli publis
 
 De modo semelhante ao print abaixo:
 ![redis-pubsub1](imgs/pub-sub1.png "Pub-Sub1")
+
+Agora, na mesma aba de onde executou o comando direto do `redis-cli`, certificando-se que está na raiz do projeto, envie uma mensagem (**pub**) para o subscriber (**sub**) ao executar o script correspondente: `ruby pub.rb`.
+![redis-pubsub2](imgs/rb-pub.png "Ruby-Pub")
 
 
 ##### Referências
