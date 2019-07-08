@@ -56,7 +56,7 @@ Após a contextualização teórica e instalação da ferramenta, vamos criar um
 
 Instale as dependências do projeto ruby executando `bundle install`, que irá pegar essas dependências através do arquivo `Gemfile`.
 
-Em seguida, ao executar o script **sub.rb**, o terminal ficará aguardando mensagens vindas do canal "newsletter#1" : `ruby sub.rb`.
+Em seguida, ao executar o script **sub.rb**, o terminal ficará aguardando mensagens vindas do canal "newsletter#1" : `ruby ./src/sub.rb`.
 
 Assim que ver a mensagem "Iniciando subscribe na lista newsletter#1", abra outra aba no terminal
 e faça um teste fazendo o `publish` diretamente do redis-cli: `redis-cli publish newsletter#1 "Colocar a mensagem que quiser"`. E a mensagem publicada pelo redis-cli irá aparecer no terminal do subscriber.
@@ -64,7 +64,7 @@ e faça um teste fazendo o `publish` diretamente do redis-cli: `redis-cli publis
 De modo semelhante ao print abaixo:
 ![redis-pubsub1](imgs/pub-sub1.png "Pub-Sub1")
 
-Agora, na mesma aba de onde executou o comando direto do `redis-cli`, certificando-se que está na raiz do projeto, envie uma mensagem (**pub**) para o subscriber (**sub**) ao executar o script correspondente: `ruby pub.rb`.
+Agora, na mesma aba de onde executou o comando direto do `redis-cli`, certificando-se que está na raiz do projeto, envie uma mensagem (**pub**) para o subscriber (**sub**) ao executar o script correspondente: `ruby ./src/pub.rb`.
 ![redis-pubsub2](imgs/rb-pub.png "Ruby-Pub")
 
 
