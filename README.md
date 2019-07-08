@@ -47,3 +47,4 @@ imagem:
 2.  https://redis.io/topics/pubsub
 3.  https://aws.amazon.com/pt/redis/
 4.  http://intro2libsys.com/focused-redis-topics/static/img/pub-sub-messaging.svg
+5.  https://github.com/redis/redis-rb
