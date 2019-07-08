@@ -31,11 +31,14 @@ make
 Caso opte por este último método, veja mais detalhes na[ documentação oficial](https://redis.io/topics/quickstart).
 
 Após qualquer um dos métodos, confira se a instalação foi bem sucedida utilizando o comando de teste `redis-cli ping`. Deve retornar `PONG`, conforme imagem:
+![redis-cli](imgs/ping.png "Redis-CLI")
 
-O site oficial recomenda o uso do Redis em produção (deploy) em máquinas linux, 
-e traz uma lista de ***clients*** redis de diversas linguagens de programação, recomendando algumas, e disponível aqui: https://redis.io/clients.
+-----------
 
-E nosso tutorial será utilizado a linguagem ruby. Portanto, o client redis utilizado será o https://github.com/redis/redis-rb, recomendado pelo site oficial.
+O site oficial traz uma lista de ***clients redis*** de diversas linguagens de programação, disponível aqui: https://redis.io/clients. 
+Usaremos o client [redis-rb](https://github.com/redis/redis-rb), recomendado para a linguagem ruby. E faremos a comunicação indireta por meio do pub/sub, conforme
+imagem:
+![redis-pubsub](imgs/redis-pubsub.png "Pub-Sub")
 
 ##### Referências
 1.  https://redis.io/
