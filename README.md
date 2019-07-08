@@ -43,4 +43,4 @@ imagem:
 ##### Referências
 1.  https://redis.io/
 2.  https://aws.amazon.com/pt/redis/
-3.  http://intro2libsys.com/
+3.  http://intro2libsys.com/focused-redis-topics/static/img/pub-sub-messaging.svg
