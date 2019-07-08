@@ -30,8 +30,13 @@ make
 ```
 Caso opte por este último método, veja mais detalhes na[ documentação oficial](https://redis.io/topics/quickstart).
 
-Após qualquer um dos métodos, confira se a instalação foi bem sucedida utilizando o comando de teste `redis-cli ping`. Deve retornar `PONG`, conforme imagem:
-![redis-cli](imgs/ping.png "Redis-CLI")
+Independente do método que tenha utilizado para a instalação do Redis, confira se a instalação foi bem sucedida.
+Assegure-se de que o `redis-server` esteja conectado e funcionando.
+
+![redis-server](imgs/ping.png "Redis-Server")
+
+Depois, execute o comando de teste `redis-cli ping`. Deve retornar `PONG`, conforme imagem:
+![redis-cli](imgs/redis-server.png "Redis-CLI")
 
 Além disso, pode-se utilizar o tutorial online e interativo do Redis para testá-lo sem precisar instalar: http://try.redis.io/
 
