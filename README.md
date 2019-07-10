@@ -1,4 +1,4 @@
-## Projeto 3 - Comunicação Indireta - Aplicações Distribuídas UFG
+## Projeto 3 - Comunicação Indireta - Aplicações Distribuídas UFG - 2019/1
 #### Redis
 -----------
 
