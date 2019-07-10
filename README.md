@@ -105,3 +105,4 @@ Aproveite para navegar pela [documentação oficial](https://redis.io/), e conti
 3.  https://aws.amazon.com/pt/redis/
 4.  http://intro2libsys.com/focused-redis-topics/static/img/pub-sub-messaging.svg
 5.  https://github.com/redis/redis-rb
+6.  https://github.com/redis/redis-rb/blob/master/lib/redis/subscribe.rb
