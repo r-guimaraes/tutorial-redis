@@ -1,5 +1,4 @@
-## Projeto 3 - Comunicação Indireta - Aplicações Distribuídas UFG - 2019/1
-#### Redis
+## Breve introdução ao Redis
 -----------
 
 O Redis é, de acordo com a documentação do site oficial (https://redis.io/), um armazenamento de estrutura de dados em memória. 
