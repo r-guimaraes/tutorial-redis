@@ -102,6 +102,6 @@ Aproveite para navegar pela [documentação oficial](https://redis.io/), e conti
 1.  https://redis.io/
 2.  https://redis.io/topics/pubsub
 3.  https://aws.amazon.com/pt/redis/
-4.  http://intro2libsys.com/focused-redis-topics/static/img/pub-sub-messaging.svg
+4.  http://intro2libsys.com/focused-redis-topics/static/img/pub-sub-messaging.svg [imagem do pub-sub]
 5.  https://github.com/redis/redis-rb
 6.  https://github.com/redis/redis-rb/blob/master/lib/redis/subscribe.rb
