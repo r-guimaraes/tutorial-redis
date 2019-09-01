@@ -1,5 +1,7 @@
 ## Introdução ao Redis - conhecendo essa poderosa ferramenta
 
+Introdução ao Redis utilizando Ruby
+
 O Redis é, de acordo com a documentação do site oficial (https://redis.io/), um armazenamento de estrutura de dados em memória. 
 E, justamente por ser em memória, é naturalmente mais rápido do que soluções que empregam acessos em disco.
 Oferece suporte a vários tipos de estruturas de dados como *strings*, *hashs*, *listas*, *bitmaps* e *streams*, dentre outros, e, alguns casos de uso frequentes do
