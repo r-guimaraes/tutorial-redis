@@ -1,4 +1,4 @@
-## Introdução ao Redis - conhecendo essa poderosa ferramenta
+## Redis - Conheça esta poderosa ferramenta
 
 Introdução ao Redis utilizando Ruby
 
